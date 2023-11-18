@@ -1,27 +1,27 @@
 package Paradygmaty.Podsumowanie.telewizory.Philips;
 
-public class TelewizorPhilipsAmbilight  extends TelewizorPhilips{
-    protected TelewizorPhilipsAmbilight(String id, int cale) {
+public class TVPhilipsAmbilight extends TVPhilips {
+    protected TVPhilipsAmbilight(String id, int cale) {
         super(id, cale);
     }
 
     @Override
-    public void wlacz() {
-        super.wlacz();
+    public void turnON() {
+        super.turnON();
         ambilight();
     }
 
     @Override
-    public void wylacz() {
-        super.wylacz();
+    public void turnOFF() {
+        super.turnOFF();
     }
     private void ambilight(){
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (statusWlaczony){
+                while (statusON){
                     try {
-                        System.out.println("wyswietlaj kolorki z tyłu");
+                        System.out.println("display lights in the background");
                         Thread.sleep(1000);
                     } catch (InterruptedException e){
                         e.printStackTrace();

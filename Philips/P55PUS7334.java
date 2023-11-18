@@ -1,10 +1,10 @@
 package Paradygmaty.Podsumowanie.telewizory.Philips;
 
-public class P55PUS7334 extends TelewizorPhilipsAmbilight{
+public class P55PUS7334 extends TVPhilipsAmbilight {
     private String hdmi1;
     private String hdmi2;
     private String hdmi3;
-    private String optyczne;
+    private String optic;
     private String usb1;
     private String usb2;
     private String bluetooth;
@@ -26,8 +26,8 @@ public class P55PUS7334 extends TelewizorPhilipsAmbilight{
         this.hdmi3 = hdmi3;
     }
 
-    public void setOptyczne(String optyczne) {
-        this.optyczne = optyczne;
+    public void setOptic(String optic) {
+        this.optic = optic;
     }
 
     public void setUsb1(String usb1) {

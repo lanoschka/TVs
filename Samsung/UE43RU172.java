@@ -1,10 +1,10 @@
 package Paradygmaty.Podsumowanie.telewizory.Samsung;
 
-public class UE43RU172 extends TelewizorSamsung{
+public class UE43RU172 extends TVSamsung{
 
     private String hdmi1;
     private String hdmi2;
-    private String optyczne;
+    private String optic;
     private String usb1;
     private String usb2;
 
@@ -21,8 +21,8 @@ public class UE43RU172 extends TelewizorSamsung{
         this.hdmi2 = hdmi2;
     }
 
-    public void setOptyczne(String optyczne) {
-        this.optyczne = optyczne;
+    public void setOptic(String optic) {
+        this.optic = optic;
     }
 
     public void setUsb1(String usb1) {

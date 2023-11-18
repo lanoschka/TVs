@@ -1,6 +1,6 @@
 package Paradygmaty.Podsumowanie.telewizory.Philips;
 
-public class P43PUS6523  extends TelewizorPhilips{
+public class P43PUS6523  extends TVPhilips {
 
 
     private String hdmi;

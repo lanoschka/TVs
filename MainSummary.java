@@ -5,15 +5,15 @@ import Paradygmaty.Podsumowanie.telewizory.Samsung.UE43RU172;
 
 import java.util.Scanner;
 
-public class MainPodsumowanie {
+public class MainSummary {
     public static void main(String[] args) {
         obslugaPilota();
 
     }
-    private static void obslugaTelewizora(){
+    private static void operation(){
         Scanner scanner = new Scanner(System.in);
 
-        Telewizor tv = new P55PUS7334("unikalneID12334"); //tu se moge zmienic na id philipsa i sie zmieni bo implementuja jeden interface
+        TV tv = new P55PUS7334("unikalneID12334"); //tu se moge zmienic na id philipsa i sie zmieni bo implementuja jeden interface
         int opcja = 0;
         System.out.println("1. Wlacz; 2. Wylacz; 3. Zmien program; 4. Zakoncz program");
 
@@ -22,15 +22,15 @@ public class MainPodsumowanie {
 
             switch (opcja){
                 case 1:
-                    tv.wlacz();
+                    tv.turnON();
                     break;
                 case 2:
-                    tv.wylacz();
+                    tv.turnOFF();
                     break;
                 case 3:
                     System.out.println("podaj numer kanału: ");
-                    int numer = scanner.nextInt();
-                    tv.przelaczProgram(numer);
+                    int number = scanner.nextInt();
+                    tv.chanelSwitch(number);
                     break;
 
             }
@@ -40,8 +40,8 @@ public class MainPodsumowanie {
     }
     private static void obslugaPilota(){
         Pilot pilot = new PilotNoName();
-        Telewizor telewizor = new UE43RU172("UnikalneID123");
-        pilot.sparujTelewizor(telewizor);
+        TV TV = new UE43RU172("UnikalneID123");
+        pilot.pairTV(TV);
 
         Scanner scanner = new Scanner(System.in);
         int opcja;
@@ -52,16 +52,16 @@ public class MainPodsumowanie {
             opcja = scanner.nextInt();
             switch (opcja){
                 case 0:
-                    pilot.nacisnijCzerwony();
+                    pilot.pressRed();
                     break;
                 case 1:
-                    pilot.nacisnijJeden();
+                    pilot.pressOne();
                     break;
                 case 2:
-                    pilot.nacisnijDwa();
+                    pilot.pressTwo();
                     break;
                 case 3:
-                    pilot.nacisnijTrzy();
+                    pilot.pressThree();
             }
         }while(opcja != 4);
         {

@@ -2,30 +2,30 @@ package Paradygmaty.Podsumowanie.telewizory;
 
 public class PilotNoName implements Pilot{
 
-    private Telewizor telewizor;
+    private TV TV;
 
     @Override
-    public void nacisnijCzerwony() {
-        telewizor.akcjaZasilania();
+    public void pressRed() {
+        TV.powerAction();
     }
 
     @Override
-    public void nacisnijJeden() {
-        telewizor.przelaczProgram(1);
+    public void pressOne() {
+        TV.chanelSwitch(1);
     }
 
     @Override
-    public void nacisnijDwa() {
-        telewizor.przelaczProgram(2);
+    public void pressTwo() {
+        TV.chanelSwitch(2);
     }
 
     @Override
-    public void nacisnijTrzy() {
-        telewizor.przelaczProgram(3);
+    public void pressThree() {
+        TV.chanelSwitch(3);
     }
 
     @Override
-    public void sparujTelewizor(Telewizor telewizor) {
-        this.telewizor = telewizor;
+    public void pairTV(TV TV) {
+        this.TV = TV;
     }
 }
